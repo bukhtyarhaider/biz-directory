@@ -14,6 +14,8 @@ export default {
         xs: "475px",
       },
       colors: {
+        "custom-purple-light": "#F7F4FB",
+        "custom-purple": "#F5E7F8",
         primary: {
           "100": "#F8991D",
           DEFAULT: "#F8991D",

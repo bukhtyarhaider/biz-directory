@@ -65,7 +65,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={workSans.variable}>{children}</body>
+      <body
+        className={`${workSans.variable} bg-gradient-to-t from-custom-purple-light via-custom-purple to-custom-purple-light h-full w-full`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

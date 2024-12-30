@@ -1,6 +1,14 @@
-export default function Home() {
+import SearchForm from "../../components/SearchForm";
+
+export default async function Home({
+  searchParams,
+}: {
+  searchParams: Promise<{ query: string }>;
+}) {
+  const query = (await searchParams).query;
+
   return (
-    <section className="lg:px-40 lg:py-20 sm:px-5 sm:py-5 xs:px-2 xs:py-1">
+    <section className="lg:px-40 lg:py-20 sm:px-5 sm:py-5 xs:px-2 xs:py-1 ">
       <div className="pink-container rounded-3xl">
         <p className="sub-heading !max-w-3xl bg-[#5751E1] px-4 rounded-2xl">
           Pitch, Vote And Grow
@@ -14,6 +22,7 @@ export default function Home() {
           Competitions.
         </p>
       </div>
+      <SearchForm query={query} />
     </section>
   );
 }
