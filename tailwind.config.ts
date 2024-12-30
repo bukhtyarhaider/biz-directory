@@ -18,7 +18,23 @@ export default {
         "custom-purple": "#F5E7F8",
         primary: {
           "100": "#F8991D",
+          blue: "#5751E1",
+          mustard: "#F8991D",
+          tomato: "",
+          pink: "#EE2B69",
           DEFAULT: "#F8991D",
+        },
+        neutral: {
+          g4: "",
+          g3: "#7F7E97",
+          g2: "",
+          g1: "#B5B5C3",
+          p1: "#EFEEFE",
+          P2: "",
+          p3: "",
+          w1: "",
+          w2: "#F7F7F9",
+          w3: "#EFEFF2",
         },
         secondary: "#FBE843",
         black: {
